@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "0c6485e6-1229-46de-a2a0-174d54c930d9",
+		"name": "firebase for tkbip <3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "send message",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=AAAAo6-TSoY:APA91bFVjVcAdvVpumlISk_AGswpRNT_3QAkCi0uiiLSbLRXVf-W7AFTfBZkKAkeWoRcDEZPHv-5McL0NkYtQQTBiHI6PloC568mEAMFaOBVTvf61SJsgULcVYAiwsZu_Um_5A1sDhQh",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"notification\": {\n        \"title\": \"Firebase\",\n        \"body\": \"Firebase is awesome\",\n        \"click_action\": \"http://localhost:3001/\",\n        \"icon\": \"http://url-to-an-icon/icon.png\"\n    },\n    \"to\":\"da3DMCoMxkU:APA91bFpdLEQFxaw9fZz9ZrNsbt1EA40iOo8eXbv2jVXNmnUwC9savmMERc0ZzYpASVtnieqpqRO8qmwaYfceh6AXvcagkHPFht8hWn28BKOvK9_6EvAHx0XGpXwNeWBhnCJ082QgNiM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
